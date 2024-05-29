@@ -8,7 +8,7 @@
             </a>
             <div class="text-base text-gray-500">
                 <a href="">
-                    {{ $post['author'] }} | {{ $post['date'] }}
+                    {{ $post['author'] }} | {{ $post->created_at->diffForHumans() }}
                 </a>
             </div>
             <p class="my-4 font-light">
